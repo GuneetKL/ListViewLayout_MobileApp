@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/txttitlerent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:text="@string/txttitlerent"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtxtdays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtxtdays"
+        android:layout_width="246dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="176dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edtxtdays"
+        android:inputType="number"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnrtype"
+        android:layout_width="409dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="338dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="111dp"
+        android:entries="@array/spnrcontent"
+        android:prompt="@string/spnrtype"
+        app:layout_constraintBottom_toTopOf="@+id/txtresult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:text="@string/btncalc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtresult"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="70dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btncalc"
+        app:layout_constraintTop_toBottomOf="@+id/spnrtype" />
+</androidx.constraintlayout.widget.ConstraintLayout>

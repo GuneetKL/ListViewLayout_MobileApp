@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SampleQuesApp</string>
+    <string name="txtname">Guneet Kaur</string>
+    <string name="txtmt">Sample Ques</string>
+    <string name="txtstid">47838774</string>
+    <string name="btnnext">Click Here to Start the App</string>
+    <string name="imgly">imagesmall</string>
+    <string name="txtsplash">This is a splash page</string>
+    <string name="txttitlerent">Rent a Car</string>
+    <string name="btncalc">Calculate Cost</string>
+    <string name="edtxtdays">Number of days to rent a car</string>
+    <string name="spnrtype">type of car</string>
+    <string-array name="spnrcontent">
+        <item>SUV</item>
+        <item>Economy</item>
+        <item>Minivan</item>
+        <item>Convertible</item>
+    </string-array>
+</resources>
