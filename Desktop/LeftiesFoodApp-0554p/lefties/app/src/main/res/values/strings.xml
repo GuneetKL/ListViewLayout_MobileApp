@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Lefties</string>
+    <string name="userEmail">Email</string>
+    <string name="userpass">Password</string>
+    <string name="loginBtn">Login</string>
+    <string name="backgroundImg">Background Image</string>
+    <string name="checkBoxRest">I manage a restaurant</string>
+    <string name="appName">Lefties</string>
+    <string name="logoImg">logo Image</string>
+
+
+    <string name="btn">Cart</string>
+    <string name="btnBack"><![CDATA[<- BACK TO HOME PAGE]]></string>
+    <string name="btnPlaceOrder">Place Order</string>
+    <string name="txtTotal">Total</string>
+    <string name="btnOrderMore">ORDER MORE FOOD</string>
+    <string name="chipDelivery">DELIVERY</string>
+    <string name="chipPickup">PICKUP</string>
+    <string name="imgCart">image</string>
+
+    <string name="Thumbnail"></string>
+    <string name="sidebar"></string>
+    <string name="backHome">Back to Home Page</string>
+    <string name="Delivery">Delivery</string>
+    <string name="Pickup">Pick Up</string>
+    <string name="CustomText1">Delivering to:
+    At:
+    BC,Ca
+    </string>
+    <string name="total">total</string>
+    <string name="PlaceOrder">Place Order</string>
+    <string name="OrderMore">Order More Food</string>
+    <string name="imageFood"></string>
+    <string name="FoodText"></string>
+    <!--    customer now-->
+    <string name="leftThumb"></string>
+    <string name="IncomingDelivery"> Incoming Delivery</string>
+    <string name="logoImg1"></string>
+    <string name="rest1">RESTAURANTS</string>
+    <string name="Lefties">Lefties</string>
+    <string name="From">From:</string>
+    <string name="FromD">FromData</string>
+    <string name="To">To:</string>
+    <string name="ToD">ToData:</string>
+    <string name="At">At:</string>
+    <string name="AtD">AtD:</string>
+    <string name="fooditem">Are you looking for food items or restaurants?</string>
+    <string name="All">All</string>
+    <string name="Featured">Featured</string>
+    <string name="Pastries">Pastries</string>
+    <string name="Chicken">Chicken</string>
+    <string name="Vegetarian">Vegetarian</string>
+    <string name="food">Food</string>
+    <string name="imageView20"></string>
+    <string name="imageView21"></string>
+    <string name="imageView22"></string>
+    <string name="imageView23"></string>
+    <string name="textView17">pasta</string>
+    <string name="textView18">pasta</string>
+    <string name="textView19">pasta</string>
+    <string name="textView20">pasta</string>
+
+
+</resources>

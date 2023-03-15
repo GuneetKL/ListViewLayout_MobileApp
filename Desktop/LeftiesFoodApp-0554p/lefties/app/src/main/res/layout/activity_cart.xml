@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="202dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="73dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/btnBack"
+        android:textAlignment="textStart"
+        android:textColor="#EF6E6C"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#EF6E6C"
+        android:text="@string/btnPlaceOrder"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOrderMore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotal"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnOrderMore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="#FDFFFFFF"
+        android:text="@string/btnOrderMore"
+        android:textColor="#EF6E6C"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlaceOrder"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="354dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#8E0144"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/listViewCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        tools:background="@drawable/rounded_edittext" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="360dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="102dp"
+        android:background="@drawable/rounded_edittext"
+        app:checkedChip="@id/chipDelivery"
+        app:layout_constraintBottom_toTopOf="@+id/listViewCart"
+        app:layout_constraintEnd_toEndOf="@+id/btnBack"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipDelivery"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F8B444"
+            android:checked="true"
+            android:text="@string/chipDelivery"
+            android:textAlignment="center"
+            android:textColor="#8E0144"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:chipBackgroundColor="#00000000" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPickup"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:text="@string/chipPickup"
+            android:textAlignment="center"
+            android:textColor="#8E0144"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:chipBackgroundColor="#001C1C1C" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/txtTotal"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlaceOrder"
+        app:layout_constraintEnd_toStartOf="@+id/txtAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewCart" />
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="139dp"
+        android:layout_height="89dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="157dp"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtTotal"
+        app:layout_constraintTop_toBottomOf="@+id/listViewCart" />
+
+    <ListView
+        android:id="@+id/listViewCart"
+        android:layout_width="412dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
